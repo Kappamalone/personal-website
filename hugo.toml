@@ -1,4 +1,39 @@
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = "Uzman's Corner"
 theme = 'digitalgarden'
+
+[menu]
+[[menu.main]]
+  name = 'Home'
+  url = '/'
+  weight = 1
+[[menu.main]]
+  name = 'Content'
+  params.header = true
+  weight = 2
+[[menu.main]]
+  name = 'Blog'
+  url = '/articles'
+  weight = 3
+
+[[menu.social]]
+  name = 'GitHub'
+  url = 'https://github.com/kappamalone'
+  weight = 2
+[[menu.social]]
+  name = 'LinkedIn'
+  url = 'https://www.linkedin.com/in/uzman-zawahir-9bbb44287/'
+  weight = 3
+[[menu.social]]
+  name = 'Email'
+  url = 'mailto:uzman.zawahir1@gmail.com'
+  weight = 8
+
+# syntax highlight settings
+[markup]
+  [markup.highlight]
+    style = "gruvbox"
+  [markup.goldmark.renderer]
+    # Enable to include inline HTML
+    unsafe = true
